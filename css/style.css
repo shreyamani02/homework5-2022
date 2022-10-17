@@ -62,7 +62,7 @@ a:visited{
     header{
         display: flex;
         flex-direction: row;
-        justify-content: space-between
+        justify-content: space-between;
     }
     .nav_links{
         display: flex;
@@ -94,16 +94,36 @@ a:visited{
     }
 }
 
-@media (orientation: portrait) {
+@media print and (orientation: portrait) {
     body{
         font-family: Arial, Helvetica;
+        background-image: none;
+    }
+    #logo{
+        display: flex;
     }
     nav{
-        display: flex; 
-        flex-direction: row;
+        display: flex;
+        justify-content: revert;
+        justify-content: stretch;
     }
     .nav_links{
+        flex-direction: row;
+    }
+    .pricing{
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 325px;
+        align-self: flex-end;
+        border: solid 2px #45ADDD;
+    }
+    #gallery, .gallery{
+        display: none;
     }
 }
