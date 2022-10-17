@@ -47,11 +47,8 @@ a:visited{
     border: solid 10px #50C7C7;
     margin: 10px;
     width: 300px;
-    box-sizing: padding-box;
-    height: min-content;
-
+    height: 230px;
 }
-
 .gallery{
     display: flex;
     flex-wrap: wrap;
@@ -94,7 +91,7 @@ a:visited{
     }
 }
 
-@media print and (orientation: portrait) {
+@media print{
     body{
         font-family: Arial, Helvetica;
         background-image: none;
@@ -102,13 +99,15 @@ a:visited{
     #logo{
         display: flex;
     }
+    .nav_links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
     nav{
         display: flex;
-        justify-content: revert;
-        justify-content: stretch;
-    }
-    .nav_links{
-        flex-direction: row;
+        width: 100%;
     }
     .pricing{
         display: flex;
@@ -125,5 +124,8 @@ a:visited{
     }
     #gallery, .gallery{
         display: none;
+    }
+    .pricing li:nth-of-type(2)::after{
+        content: "👍 ";
     }
 }
