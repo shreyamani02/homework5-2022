@@ -65,7 +65,7 @@ height of first image as shown in sample*/
     height: 230px;
 }
 /* Step 10) display set to flex to change display depending on screen size. 
-justify content and align items to center */
+justify content will center the gallery */
 .gallery{
     display: flex;
     flex-wrap: wrap;
