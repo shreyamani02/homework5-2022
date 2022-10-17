@@ -70,7 +70,6 @@ justify content and align items to center */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 @media all and (min-width: 900px) {
     /* Step 11) display set to flex. space-between makes sure navs on the far right */
